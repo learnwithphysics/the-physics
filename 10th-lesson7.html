@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lesson 7 - Classification of Elements - The Periodic Table</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="logo">
+
+<div class="atom">⚛</div>
+
+<div>
+
+<h2>THE PHYSICS</h2>
+
+<p>Learn • Explore • Understand</p>
+
+</div>
+
+</div>
+
+<div class="founder">
+
+<h3>G. KIRAN KUMAR</h3>
+
+<p>Founder & Creator</p>
+
+</div>
+
+<div class="lesson-content">
+
+<h1>📖 Lesson 7 - Classification of Elements – The Periodic Table</h1>
+
+<p class="subtitle">
+
+Class 10 Physical Science • Telangana Board
+
+</p>
+
+<div class="ai-box">
+
+<h3>🤖 AI Teacher</h3>
+
+<p>
+
+Click below to understand the Periodic Table easily.
+
+</p>
+
+<button class="ai-btn" onclick="explainPeriodic()">
+
+🤖 Explain with AI
+
+</button>
+
+<div id="periodicAI" class="ai-answer" style="display:none;"></div>
+
+</div>
+
+<div class="lesson-section">
+
+<h2>📚 Introduction</h2>
+
+<p>
+
+More than 100 elements are known today.
+
+Scientists classified these elements based on their properties so that they could be studied easily.
+
+This arrangement is called the <b>Periodic Table</b>.
+
+</p>
+
+</div>
+
+<div class="lesson-section">
+
+<h2>🎯 Learning Outcomes</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>Understand why elements are classified.</li>
+
+<li>Know the Modern Periodic Table.</li>
+
+<li>Learn Groups and Periods.</li>
+
+<li>Study metals, non-metals and metalloids.</li>
+
+<li>Understand periodic properties.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="lesson-section">
+
+<h2>📖 What is the Periodic Table?</h2>
+
+<p>
+
+The Periodic Table is a systematic arrangement of elements in increasing order of their atomic numbers.
+
+Elements having similar chemical properties are placed in the same group.
+
+</p>
+
+</div>
+
+<div class="lesson-section">
+
+<h2>📊 Modern Periodic Table</h2>
+
+<div class="fact-box">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#00d4ff;color:black;">
+
+<th>Feature</th>
+
+<th>Value</th>
+
+</tr>
+
+<tr>
+
+<td>Groups</td>
+
+<td>18</td>
+
+</tr>
+
+<tr>
+
+<td>Periods</td>
+
+<td>7</td>
+
+</tr>
+
+<tr>
+
+<td>Arrangement</td>
+
+<td>Increasing Atomic Number</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="lesson-section">
+
+<h2>🧪 Activity</h2>
+
+<p>
+
+How many groups are present in the Modern Periodic Table?</p>
+
+<button class="quiz-btn" onclick="groupCorrect()">18</button>
+
+<button class="quiz-btn" onclick="groupWrong()">8</button>
+
+<button class="quiz-btn" onclick="groupWrong()">7</button>
+
+<p id="groupResult"></p>
+
+</div>
+<!-- ========================= -->
+<!-- GROUPS AND PERIODS -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>📖 Groups and Periods</h2>
+
+<p>
+
+The Modern Periodic Table is divided into vertical columns called <b>Groups</b> and horizontal rows called <b>Periods</b>.
+
+Elements in the same group have similar chemical properties because they have the same number of valence electrons.
+
+</p>
+
+<div class="fact-box">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#00d4ff;color:black;">
+
+<th>Groups</th>
+
+<th>Periods</th>
+
+</tr>
+
+<tr>
+
+<td>18 Vertical Columns</td>
+
+<td>7 Horizontal Rows</td>
+
+</tr>
+
+<tr>
+
+<td>Similar Properties</td>
+
+<td>Gradual Change in Properties</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- METALS NON-METALS -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>⚙ Metals, Non-metals & Metalloids</h2>
+
+<div class="fact-box">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#00d4ff;color:black;">
+
+<th>Type</th>
+
+<th>Properties</th>
+
+</tr>
+
+<tr>
+
+<td>Metals</td>
+
+<td>Good conductors of heat and electricity</td>
+
+</tr>
+
+<tr>
+
+<td>Non-metals</td>
+
+<td>Poor conductors, brittle</td>
+
+</tr>
+
+<tr>
+
+<td>Metalloids</td>
+
+<td>Show properties of both metals and non-metals</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- COMMON EXAMPLES -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>📋 Examples</h2>
+
+<div class="fact-box">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#00d4ff;color:black;">
+
+<th>Category</th>
+
+<th>Examples</th>
+
+</tr>
+
+<tr>
+
+<td>Metals</td>
+
+<td>Iron, Copper, Aluminium</td>
+
+</tr>
+
+<tr>
+
+<td>Non-metals</td>
+
+<td>Oxygen, Nitrogen, Sulphur</td>
+
+</tr>
+
+<tr>
+
+<td>Metalloids</td>
+
+<td>Silicon, Germanium</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- PERIODIC TRENDS -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>📈 Periodic Trends</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>➡ Atomic size generally decreases across a period.</li>
+
+<li>⬇ Atomic size generally increases down a group.</li>
+
+<li>➡ Metallic character decreases across a period.</li>
+
+<li>⬇ Metallic character increases down a group.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- ACTIVITY -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>🧪 Activity</h2>
+
+<p>
+
+Which element below is a Metalloid?
+
+</p>
+
+<button class="quiz-btn"
+
+onclick="metalloidCorrect()">
+
+Silicon
+
+</button>
+
+<button class="quiz-btn"
+
+onclick="metalloidWrong()">
+
+Iron
+
+</button>
+
+<button class="quiz-btn"
+
+onclick="metalloidWrong()">
+
+Oxygen
+
+</button>
+
+<p id="metalloidResult"></p>
+
+</div>
+
+<!-- ========================= -->
+<!-- AI QUICK TIP -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<div class="fact-box">
+
+<h3>🤖 AI Quick Tip</h3>
+
+<p>
+
+Remember:
+
+<br><br>
+
+📏 Groups = Vertical Columns (18)
+
+<br><br>
+
+📏 Periods = Horizontal Rows (7)
+
+<br><br>
+
+⚙ Metals → Left Side
+
+<br>
+
+🧪 Non-metals → Right Side
+
+<br>
+
+⚛ Metalloids → Between Metals and Non-metals
+
+</p>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- IMPORTANT GROUPS -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>🧪 Important Groups in the Periodic Table</h2>
+
+<div class="fact-box">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#00d4ff;color:black;">
+
+<th>Group</th>
+
+<th>Name</th>
+
+<th>Examples</th>
+
+</tr>
+
+<tr>
+
+<td>Group 1</td>
+
+<td>Alkali Metals</td>
+
+<td>Lithium, Sodium, Potassium</td>
+
+</tr>
+
+<tr>
+
+<td>Group 2</td>
+
+<td>Alkaline Earth Metals</td>
+
+<td>Magnesium, Calcium</td>
+
+</tr>
+
+<tr>
+
+<td>Group 17</td>
+
+<td>Halogens</td>
+
+<td>Fluorine, Chlorine, Bromine</td>
+
+</tr>
+
+<tr>
+
+<td>Group 18</td>
+
+<td>Noble Gases</td>
+
+<td>Helium, Neon, Argon</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- VALENCY -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>⚛ Valency</h2>
+
+<p>
+
+Valency is the combining capacity of an element.
+
+It depends on the number of electrons present in the outermost shell.
+
+</p>
+
+<div class="fact-box">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#00d4ff;color:black;">
+
+<th>Element</th>
+
+<th>Valence Electrons</th>
+
+<th>Valency</th>
+
+</tr>
+
+<tr>
+
+<td>Hydrogen</td>
+
+<td>1</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Carbon</td>
+
+<td>4</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>Oxygen</td>
+
+<td>6</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>Sodium</td>
+
+<td>1</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Chlorine</td>
+
+<td>7</td>
+
+<td>1</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- INTERACTIVE PERIODIC TABLE -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>🎮 Interactive Periodic Table</h2>
+
+<p>
+
+Click an element to know its group.
+
+</p>
+
+<button class="quiz-btn" onclick="showSodium()">
+
+Na
+
+</button>
+
+<button class="quiz-btn" onclick="showChlorine()">
+
+Cl
+
+</button>
+
+<button class="quiz-btn" onclick="showNeon()">
+
+Ne
+
+</button>
+
+<button class="quiz-btn" onclick="showCalcium()">
+
+Ca
+
+</button>
+
+<div class="fact-box">
+
+<p id="elementInfo">
+
+Select an element.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- QUIZ -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>📝 Quick Quiz</h2>
+
+<p>
+
+Which group contains Noble Gases?
+
+</p>
+
+<button class="quiz-btn"
+
+onclick="nobleCorrect()">
+
+18
+
+</button>
+
+<button class="quiz-btn"
+
+onclick="nobleWrong()">
+
+17
+
+</button>
+
+<button class="quiz-btn"
+
+onclick="nobleWrong()">
+
+1
+
+</button>
+
+<p id="nobleResult"></p>
+
+</div>
+
+<!-- ========================= -->
+<!-- AI FACT -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<div class="fact-box">
+
+<h3>🤖 AI Memory Trick</h3>
+
+<p>
+
+🥇 Group 1 → Alkali Metals
+
+<br><br>
+
+🥈 Group 2 → Alkaline Earth Metals
+
+<br><br>
+
+🟢 Group 17 → Halogens
+
+<br><br>
+
+🔵 Group 18 → Noble Gases
+
+</p>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- IMPROVE YOUR LEARNING -->
+<!-- ========================= -->
+
+<div class="lesson-section" id="improve">
+
+<h2>📚 Improve Your Learning</h2>
+
+<div class="fact-box">
+
+<h3>1. Why do we classify elements?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p1',this)">👀 Show Answer</button>
+
+<p id="p1" style="display:none;">
+Elements are classified to make their study easy and to understand their properties systematically.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>2. What is the Modern Periodic Table?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p2',this)">👀 Show Answer</button>
+
+<p id="p2" style="display:none;">
+It is the arrangement of elements in increasing order of atomic number.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>3. How many groups are present?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p3',this)">👀 Show Answer</button>
+
+<p id="p3" style="display:none;">
+18 Groups.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>4. How many periods are present?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p4',this)">👀 Show Answer</button>
+
+<p id="p4" style="display:none;">
+7 Periods.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>5. What are Alkali Metals?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p5',this)">👀 Show Answer</button>
+
+<p id="p5" style="display:none;">
+Group 1 elements are called Alkali Metals.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>6. Which group contains Halogens?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p6',this)">👀 Show Answer</button>
+
+<p id="p6" style="display:none;">
+Group 17.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>7. Which group contains Noble Gases?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p7',this)">👀 Show Answer</button>
+
+<p id="p7" style="display:none;">
+Group 18.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>8. What is Valency?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p8',this)">👀 Show Answer</button>
+
+<p id="p8" style="display:none;">
+Valency is the combining capacity of an element.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>9. Give one example of a Metalloid.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p9',this)">👀 Show Answer</button>
+
+<p id="p9" style="display:none;">
+Silicon.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>10. On what basis are elements arranged?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('p10',this)">👀 Show Answer</button>
+
+<p id="p10" style="display:none;">
+They are arranged in increasing order of Atomic Number.
+</p>
+
+</div>
+
+</div>
+
+<!-- IMPORTANT DEFINITIONS -->
+
+<div class="lesson-section">
+
+<h2>⭐ Important Definitions</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>📖 Periodic Table – Arrangement of elements in increasing atomic number.</li>
+
+<li>📏 Group – Vertical column.</li>
+
+<li>📐 Period – Horizontal row.</li>
+
+<li>⚛ Valency – Combining capacity of an element.</li>
+
+<li>🧪 Metalloid – Element having properties of both metals and non-metals.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- QUICK REVISION -->
+
+<div class="lesson-section">
+
+<h2>📋 Quick Revision</h2>
+
+<div class="fact-box">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#00d4ff;color:black;">
+<th>Concept</th>
+<th>Remember</th>
+</tr>
+
+<tr>
+<td>Groups</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>Periods</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>Group 1</td>
+<td>Alkali Metals</td>
+</tr>
+
+<tr>
+<td>Group 17</td>
+<td>Halogens</td>
+</tr>
+
+<tr>
+<td>Group 18</td>
+<td>Noble Gases</td>
+</tr>
+
+<tr>
+<td>Arrangement</td>
+<td>Increasing Atomic Number</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- EXAM TIPS -->
+
+<div class="lesson-section">
+
+<h2>📝 Exam Tips</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>✅ Remember 18 Groups and 7 Periods.</li>
+
+<li>✅ Learn important element groups.</li>
+
+<li>✅ Practice valency questions.</li>
+
+<li>✅ Learn metals, non-metals and metalloids.</li>
+
+<li>✅ Revise periodic trends.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- SUMMARY -->
+
+<div class="lesson-section" id="summary">
+
+<h2>📖 Lesson Summary</h2>
+
+<ul>
+
+<li>✅ Elements are arranged according to Atomic Number.</li>
+
+<li>✅ Modern Periodic Table has 18 Groups and 7 Periods.</li>
+
+<li>✅ Elements in the same group have similar properties.</li>
+
+<li>✅ Metals, Non-metals and Metalloids have different properties.</li>
+
+<li>✅ Valency depends on outermost electrons.</li>
+
+</ul>
+
+</div>
+
+<!-- LESSON COMPLETED -->
+
+<div class="lesson-section">
+
+<h2>🎉 Lesson Completed</h2>
+
+<p>
+
+Congratulations! You have successfully completed
+
+<b>Lesson 7 – Classification of Elements – The Periodic Table.</b>
+
+</p>
+
+</div>
+
+<div style="text-align:center;margin:40px 0;">
+
+<button class="next-btn"
+onclick="location.href='10th-lesson8.html'">
+
+➡ Continue to Lesson 8 – Chemical Bonding
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

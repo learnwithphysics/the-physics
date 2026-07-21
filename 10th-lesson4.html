@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lesson 4 - Refraction of Light at Plane Surfaces</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="logo">
+
+<div class="atom">⚛</div>
+
+<div>
+
+<h2>THE PHYSICS</h2>
+
+<p>Learn • Explore • Understand</p>
+
+</div>
+
+</div>
+
+<div class="founder">
+
+<h3>G. KIRAN KUMAR</h3>
+
+<p>Founder & Creator</p>
+
+</div>
+
+<div class="lesson-content">
+
+<h1>💡 Lesson 4 - Refraction of Light at Plane Surfaces</h1>
+
+<p class="subtitle">
+
+Class 10 Physical Science • Telangana Board
+
+</p>
+
+<!-- AI -->
+
+<div class="ai-box">
+
+<h3>🤖 AI Teacher</h3>
+
+<p>
+
+Click below to understand Refraction easily.
+
+</p>
+
+<button class="ai-btn"
+
+onclick="explainRefraction()">
+
+🤖 Explain with AI
+
+</button>
+
+<div id="refractionAI"
+
+class="ai-answer"
+
+style="display:none;">
+
+</div>
+
+</div>
+
+<!-- Progress -->
+
+<div class="progress-card">
+
+<div class="progress-top">
+
+<span>Lesson Progress</span>
+
+<span>0%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-fill"></div>
+
+</div>
+
+</div>
+
+<!-- Navigation -->
+
+<div class="topic-nav">
+
+<a href="#intro">Introduction</a>
+
+<a href="#refraction">Refraction</a>
+
+<a href="#laws">Laws</a>
+
+<a href="#refractive">Refractive Index</a>
+
+<a href="#lab">Virtual Lab</a>
+
+<a href="#summary">Summary</a>
+
+</div>
+
+<!-- INTRO -->
+
+<div class="lesson-section" id="intro">
+
+<h2>📖 Introduction</h2>
+
+<p>
+
+When light travels from one transparent medium to another, its speed changes.
+
+Because of this change in speed, the light ray bends.
+
+This bending of light is called refraction.
+
+</p>
+
+<div class="fact-box">
+
+<h3>🎯 Learning Outcomes</h3>
+
+<ul>
+
+<li>Understand Refraction.</li>
+
+<li>Learn Laws of Refraction.</li>
+
+<li>Know Refractive Index.</li>
+
+<li>Observe real-life examples.</li>
+
+<li>Perform virtual experiments.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- REFRACTION -->
+
+<div class="lesson-section" id="refraction">
+
+<h2>💡 What is Refraction?</h2>
+
+<p>
+
+Refraction is the bending of light when it passes from one transparent medium to another because its speed changes.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Daily Life Examples</h3>
+
+<ul>
+
+<li>🥄 Spoon appears bent in water.</li>
+
+<li>🐟 Fish appears nearer than it actually is.</li>
+
+<li>🏊 Swimming pool appears shallow.</li>
+
+<li>💎 Diamonds shine due to refraction.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- LAWS -->
+
+<div class="lesson-section" id="laws">
+
+<h2>📜 Laws of Refraction</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>✅ Incident ray, refracted ray and normal lie in the same plane.</li>
+
+<li>✅ Snell's Law is obeyed.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- REFRACTIVE INDEX -->
+
+<div class="lesson-section" id="refractive">
+
+<h2>📐 Refractive Index</h2>
+
+<p>
+
+Refractive Index tells us how much light bends inside a medium.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Formula</h3>
+
+<h2 style="text-align:center;color:#00d4ff;">
+
+n = c / v
+
+</h2>
+
+<ul>
+
+<li>n = Refractive Index</li>
+
+<li>c = Speed of light in vacuum</li>
+
+<li>v = Speed of light in the medium</li>
+
+</ul>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- SNELL'S LAW -->
+<!-- ========================= -->
+
+<div class="lesson-section">
+
+<h2>📏 Snell's Law</h2>
+
+<p>
+
+Snell's Law gives the relationship between the angle of incidence and the angle of refraction.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Formula</h3>
+
+<h2 style="text-align:center;color:#00d4ff;">
+
+n₁ sin i = n₂ sin r
+
+</h2>
+
+<ul>
+
+<li><b>i</b> = Angle of Incidence</li>
+
+<li><b>r</b> = Angle of Refraction</li>
+
+<li><b>n₁</b> = Refractive Index of Medium 1</li>
+
+<li><b>n₂</b> = Refractive Index of Medium 2</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- REFRACTIVE INDEX TABLE -->
+
+<div class="lesson-section">
+
+<h2>📊 Refractive Index of Some Materials</h2>
+
+<div class="fact-box">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#00d4ff;color:black;">
+
+<th>Medium</th>
+
+<th>Refractive Index</th>
+
+</tr>
+
+<tr>
+
+<td>Vacuum</td>
+
+<td>1.00</td>
+
+</tr>
+
+<tr>
+
+<td>Air</td>
+
+<td>1.0003</td>
+
+</tr>
+
+<tr>
+
+<td>Water</td>
+
+<td>1.33</td>
+
+</tr>
+
+<tr>
+
+<td>Ice</td>
+
+<td>1.31</td>
+
+</tr>
+
+<tr>
+
+<td>Glass</td>
+
+<td>1.50</td>
+
+</tr>
+
+<tr>
+
+<td>Diamond</td>
+
+<td>2.42</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- BENDING OF LIGHT -->
+
+<div class="lesson-section">
+
+<h2>➡ How Light Bends</h2>
+
+<div class="fact-box">
+
+<h3>Air ➜ Glass</h3>
+
+<p>
+
+Light slows down and bends <b>towards the normal.</b>
+
+</p>
+
+<hr>
+
+<h3>Glass ➜ Air</h3>
+
+<p>
+
+Light speeds up and bends <b>away from the normal.</b>
+
+</p>
+
+</div>
+
+</div>
+
+<!-- IMPORTANT POINTS -->
+
+<div class="lesson-section">
+
+<h2>⭐ Important Points</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>✅ Speed of light decreases in denser medium.</li>
+
+<li>✅ Frequency of light remains constant.</li>
+
+<li>✅ Wavelength changes during refraction.</li>
+
+<li>✅ Refraction occurs only when light changes medium.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- DAILY LIFE APPLICATIONS -->
+
+<div class="lesson-section">
+
+<h2>🌍 Applications of Refraction</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>👓 Spectacles</li>
+
+<li>📷 Camera Lens</li>
+
+<li>🔬 Microscope</li>
+
+<li>🔭 Telescope</li>
+
+<li>💎 Diamond Sparkle</li>
+
+<li>🏊 Swimming Pool appears shallow</li>
+
+</ul>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- VIRTUAL LAB -->
+<!-- ========================= -->
+
+<div class="lesson-section" id="lab">
+
+<h2>🧪 Virtual Lab - Refraction of Light</h2>
+
+<p>
+
+Move the slider and observe how the light ray bends.
+
+</p>
+
+<p>
+
+Angle of Incidence
+
+<input
+type="range"
+id="angleSlider"
+min="10"
+max="80"
+value="30"
+oninput="changeAngle()">
+
+</p>
+
+<div style="background:#111;height:280px;border-radius:12px;position:relative;overflow:hidden;">
+
+<div style="position:absolute;left:50%;top:0;height:100%;width:2px;background:white;"></div>
+
+<div style="position:absolute;top:140px;width:100%;height:2px;background:#00d4ff;"></div>
+
+<div id="incidentRay"
+
+style="position:absolute;
+left:90px;
+top:70px;
+width:170px;
+height:4px;
+background:yellow;
+transform:rotate(35deg);
+transform-origin:left center;
+transition:1s;">
+
+</div>
+
+<div id="refractedRay"
+
+style="position:absolute;
+left:250px;
+top:145px;
+width:170px;
+height:4px;
+background:orange;
+transform:rotate(20deg);
+transform-origin:left center;
+transition:1s;">
+
+</div>
+
+</div>
+
+<p id="angleResult" style="text-align:center;"></p>
+
+</div>
+
+<!-- ACTIVITY -->
+
+<div class="lesson-section">
+
+<h2>🧪 Activity - Identify the Medium</h2>
+
+<p>
+
+If light bends towards the normal, which medium is it entering?
+
+</p>
+
+<button class="quiz-btn"
+
+onclick="mediumCorrect()">
+
+Denser Medium
+
+</button>
+
+<button class="quiz-btn"
+
+onclick="mediumWrong()">
+
+Rarer Medium
+
+</button>
+
+<p id="mediumResult"></p>
+
+</div>
+
+<!-- OBSERVATION -->
+
+<div class="lesson-section">
+
+<h2>🔍 Observation</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>✅ Towards Normal → Denser Medium</li>
+
+<li>✅ Away from Normal → Rarer Medium</li>
+
+<li>✅ Frequency never changes.</li>
+
+<li>✅ Speed and wavelength change.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- AI QUICK FACT -->
+
+<div class="lesson-section">
+
+<div class="fact-box">
+
+<h3>🤖 AI Quick Tip</h3>
+
+<p>
+
+Remember this shortcut:
+
+<b>Rarer ➜ Denser = Towards Normal</b>
+
+<br><br>
+
+<b>Denser ➜ Rarer = Away from Normal</b>
+
+</p>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- IMPROVE YOUR LEARNING -->
+<!-- ========================= -->
+
+<div class="lesson-section" id="improve">
+
+<h2>📚 Improve Your Learning</h2>
+
+<div class="fact-box">
+
+<h3>1. What is refraction?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref1',this)">
+👀 Show Answer
+</button>
+
+<p id="ref1" style="display:none;">
+Refraction is the bending of light when it passes from one transparent medium to another due to a change in speed.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>2. State Snell's Law.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref2',this)">
+👀 Show Answer
+</button>
+
+<p id="ref2" style="display:none;">
+For two given media, the ratio of sin i to sin r is constant.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>3. What is Refractive Index?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref3',this)">
+👀 Show Answer
+</button>
+
+<p id="ref3" style="display:none;">
+It is the ratio of the speed of light in vacuum to the speed of light in the medium.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>4. Write the formula for Refractive Index.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref4',this)">
+👀 Show Answer
+</button>
+
+<p id="ref4" style="display:none;">
+n = c / v
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>5. What happens when light enters a denser medium?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref5',this)">
+👀 Show Answer
+</button>
+
+<p id="ref5" style="display:none;">
+It bends towards the normal.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>6. What happens when light enters a rarer medium?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref6',this)">
+👀 Show Answer
+</button>
+
+<p id="ref6" style="display:none;">
+It bends away from the normal.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>7. Does frequency change during refraction?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref7',this)">
+👀 Show Answer
+</button>
+
+<p id="ref7" style="display:none;">
+No. Frequency remains constant.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>8. Give two applications of refraction.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref8',this)">
+👀 Show Answer
+</button>
+
+<p id="ref8" style="display:none;">
+Spectacles, Camera, Microscope, Telescope.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>9. Why does a swimming pool appear shallow?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref9',this)">
+👀 Show Answer
+</button>
+
+<p id="ref9" style="display:none;">
+Because of refraction of light.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>10. Why does a pencil appear bent in water?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('ref10',this)">
+👀 Show Answer
+</button>
+
+<p id="ref10" style="display:none;">
+Because light rays bend when they pass from water to air.
+</p>
+
+</div>
+
+</div>
+
+<!-- IMPORTANT DEFINITIONS -->
+
+<div class="lesson-section">
+
+<h2>⭐ Important Definitions</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>💡 Refraction – Bending of light.</li>
+
+<li>📏 Normal – Imaginary line perpendicular to the surface.</li>
+
+<li>📐 Angle of Incidence – Angle between incident ray and normal.</li>
+
+<li>📐 Angle of Refraction – Angle between refracted ray and normal.</li>
+
+<li>🌍 Refractive Index – n = c/v.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- EXAM TIPS -->
+
+<div class="lesson-section">
+
+<h2>📝 Exam Tips</h2>
+
+<div class="fact-box">
+
+<ul>
+
+<li>✅ Learn Snell's Law formula.</li>
+
+<li>✅ Remember refractive index values.</li>
+
+<li>✅ Practice ray diagrams.</li>
+
+<li>✅ Learn daily-life applications.</li>
+
+<li>✅ Revise definitions regularly.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- SUMMARY -->
+
+<div class="lesson-section" id="summary">
+
+<h2>📖 Lesson Summary</h2>
+
+<ul>
+
+<li>✅ Refraction is the bending of light.</li>
+
+<li>✅ Speed and wavelength change during refraction.</li>
+
+<li>✅ Frequency remains constant.</li>
+
+<li>✅ Light bends towards the normal in a denser medium.</li>
+
+<li>✅ Snell's Law explains refraction mathematically.</li>
+
+</ul>
+
+</div>
+
+<!-- COMPLETE -->
+
+<div class="lesson-section">
+
+<h2>🎉 Lesson Completed</h2>
+
+<p>
+
+Excellent! You have completed
+
+<b>Lesson 4 – Refraction of Light at Plane Surfaces.</b>
+
+</p>
+
+</div>
+
+<div style="text-align:center;margin:40px 0;">
+
+<button class="next-btn"
+
+onclick="location.href='10th-lesson5.html'">
+
+➡ Continue to Lesson 5
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

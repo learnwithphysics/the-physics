@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lesson 7 - Atoms, Molecules and Chemical Reactions</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="logo">
+
+<div class="atom">⚛</div>
+
+<div>
+
+<h2>THE PHYSICS</h2>
+
+<p>Learn • Explore • Understand</p>
+
+</div>
+
+</div>
+
+<div class="founder">
+
+<h3>G. KIRAN KUMAR</h3>
+
+<p>Founder & Creator</p>
+
+</div>
+
+<div class="lesson-content">
+
+<h1>⚛ Lesson 7 - Atoms, Molecules and Chemical Reactions</h1>
+
+<p class="subtitle">
+
+9th Class Physical Science • Telangana Board
+
+</p>
+<div class="ai-box">
+
+<h3>🤖 AI Teacher</h3>
+
+<p>
+Need help understanding this topic?
+Click below.
+</p>
+
+<button class="ai-btn"
+onclick="explainLesson()">
+
+🤖 Explain with AI
+
+</button>
+
+<div id="aiExplanation"
+class="ai-answer"
+style="display:none;">
+</div>
+
+</div>
+
+<div class="progress-card">
+
+<div class="progress-top">
+
+<span>Lesson Progress</span>
+
+<span>0%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-fill"></div>
+
+</div>
+
+</div>
+
+<div class="topic-nav">
+
+<a href="#intro">Introduction</a>
+
+<a href="#atom">Atom</a>
+
+<a href="#molecule">Molecule</a>
+
+<a href="#reaction">Chemical Reaction</a>
+
+<a href="#equation">Chemical Equation</a>
+
+<a href="#lab">Virtual Lab</a>
+
+<a href="#improve">Improve Learning</a>
+
+<a href="#summary">Summary</a>
+
+</div>
+
+<!-- INTRODUCTION -->
+
+<div class="lesson-section" id="intro">
+
+<h2>📖 Introduction</h2>
+
+<p>
+
+Everything around us is made of tiny particles.
+These particles combine in different ways to form substances and participate in chemical reactions.
+
+</p>
+
+<div class="fact-box">
+
+<h3>🎯 Learning Outcomes</h3>
+
+<ul>
+
+<li>Understand atoms and molecules.</li>
+
+<li>Learn chemical reactions.</li>
+
+<li>Understand chemical equations.</li>
+
+<li>Observe simple virtual experiments.</li>
+
+<li>Revise through summary.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- ATOM -->
+
+<div class="lesson-section" id="atom">
+
+<h2>⚛ Atom</h2>
+
+<p>
+
+An atom is the smallest particle of an element that retains its chemical properties.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Examples</h3>
+
+<ul>
+
+<li>Hydrogen (H)</li>
+
+<li>Oxygen (O)</li>
+
+<li>Carbon (C)</li>
+
+<li>Iron (Fe)</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- MOLECULE -->
+
+<div class="lesson-section" id="molecule">
+
+<h2>🧬 Molecule</h2>
+
+<p>
+
+A molecule is formed when two or more atoms combine chemically.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Examples</h3>
+
+<ul>
+
+<li>H₂O - Water</li>
+
+<li>O₂ - Oxygen</li>
+
+<li>CO₂ - Carbon Dioxide</li>
+
+<li>NH₃ - Ammonia</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- CHEMICAL REACTION -->
+
+<div class="lesson-section" id="reaction">
+
+<h2>🧪 Chemical Reaction</h2>
+
+<p>
+
+A chemical reaction is a process in which reactants change into new substances called products.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Examples</h3>
+
+<ul>
+
+<li>Burning of paper</li>
+
+<li>Rusting of iron</li>
+
+<li>Cooking food</li>
+
+<li>Digestion of food</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- CHEMICAL EQUATION -->
+
+<div class="lesson-section" id="equation">
+
+<h2>📝 Chemical Equation</h2>
+
+<p>
+
+A chemical equation represents a chemical reaction using symbols and chemical formulas.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Example</h3>
+
+<p>
+
+2H₂ + O₂ → 2H₂O
+
+</p>
+
+</div>
+
+</div>
+<!-- VIRTUAL LAB -->
+
+<div class="lesson-section" id="lab">
+
+<h2>🧪 Virtual Lab - Chemical Reaction</h2>
+
+<p>
+
+Click the button to observe a simple chemical reaction.
+
+</p>
+
+<button class="next-btn" onclick="startReaction()">
+
+▶ Start Reaction
+
+</button>
+
+<div style="margin-top:20px;height:250px;background:#111;border-radius:10px;position:relative;overflow:hidden;">
+
+<div id="beaker1"
+
+style="position:absolute;left:90px;top:80px;font-size:70px;transition:2s;">
+
+🧪
+
+</div>
+
+<div id="beaker2"
+
+style="position:absolute;right:90px;top:80px;font-size:70px;transition:2s;">
+
+🧪
+
+</div>
+
+<div id="product"
+
+style="position:absolute;left:45%;top:90px;font-size:70px;opacity:0;transition:2s;">
+
+⚗️
+
+</div>
+
+</div>
+
+<p id="reactionResult"></p>
+
+</div>
+
+<!-- PRACTICAL ACTIVITY -->
+
+<div class="lesson-section">
+
+<h2>🔬 Practical Activity</h2>
+
+<p>
+
+Mix vinegar and baking soda carefully.
+
+Observe what happens.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Observation</h3>
+
+<p>
+
+Bubbles of carbon dioxide gas are produced.
+This shows that a chemical reaction has taken place.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- CHARACTERISTICS -->
+
+<div class="lesson-section">
+
+<h2>✨ Characteristics of a Chemical Reaction</h2>
+
+<ul>
+
+<li>🔥 Change in temperature</li>
+
+<li>🎨 Change in colour</li>
+
+<li>💨 Gas may be released</li>
+
+<li>🌧 A precipitate may form</li>
+
+<li>💡 Sometimes light is produced</li>
+
+</ul>
+
+</div>
+<!-- IMPROVE YOUR LEARNING -->
+
+<div class="lesson-section" id="improve">
+
+<h2>📚 Improve Your Learning</h2>
+
+<div class="fact-box">
+
+<h3>1. What is an Atom?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a1',this)">
+👀 Show Answer
+</button>
+
+<p id="a1" style="display:none;">
+An atom is the smallest particle of an element that retains its chemical properties.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>2. What is a Molecule?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a2',this)">
+👀 Show Answer
+</button>
+
+<p id="a2" style="display:none;">
+A molecule is formed when two or more atoms combine chemically.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>3. What is a Chemical Reaction?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a3',this)">
+👀 Show Answer
+</button>
+
+<p id="a3" style="display:none;">
+A chemical reaction is a process in which reactants change into products.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>4. What are Reactants?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a4',this)">
+👀 Show Answer
+</button>
+
+<p id="a4" style="display:none;">
+Reactants are the substances present before a chemical reaction starts.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>5. What are Products?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a5',this)">
+👀 Show Answer
+</button>
+
+<p id="a5" style="display:none;">
+Products are the new substances formed after a chemical reaction.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>6. Write one Chemical Equation.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a6',this)">
+👀 Show Answer
+</button>
+
+<p id="a6" style="display:none;">
+2H₂ + O₂ → 2H₂O
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>7. Name two Chemical Reactions.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a7',this)">
+👀 Show Answer
+</button>
+
+<p id="a7" style="display:none;">
+Rusting of iron and burning of paper.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>8. Mention two signs of a Chemical Reaction.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a8',this)">
+👀 Show Answer
+</button>
+
+<p id="a8" style="display:none;">
+Colour change and gas evolution.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>9. Is cooking food a Chemical Reaction?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a9',this)">
+👀 Show Answer
+</button>
+
+<p id="a9" style="display:none;">
+Yes. New substances are formed during cooking.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>10. Give one example of a Molecule.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('a10',this)">
+👀 Show Answer
+</button>
+
+<p id="a10" style="display:none;">
+Water (H₂O).
+</p>
+
+</div>
+
+</div>
+
+<!-- SUMMARY -->
+
+<div class="lesson-section" id="summary">
+
+<h2>📖 Lesson Summary</h2>
+
+<ul>
+
+<li>✅ Atoms are the smallest particles of elements.</li>
+
+<li>✅ Molecules are formed by combining atoms.</li>
+
+<li>✅ Chemical reactions produce new substances.</li>
+
+<li>✅ Reactants change into products.</li>
+
+<li>✅ Chemical equations represent reactions using symbols.</li>
+
+<li>✅ Reactions may produce gas, heat, light or colour change.</li>
+
+</ul>
+
+</div>
+
+<!-- LESSON COMPLETED -->
+
+<div class="lesson-section">
+
+<h2>🎉 Lesson Completed</h2>
+
+<p>
+
+Congratulations!
+
+You have successfully completed
+
+<b>Lesson 7 – Atoms, Molecules and Chemical Reactions.</b>
+
+</p>
+
+</div>
+
+<div style="text-align:center;margin:40px 0;">
+
+<button class="next-btn"
+
+onclick="location.href='9th-lesson8.html'">
+
+➡ Continue to Lesson 8
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

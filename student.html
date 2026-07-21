@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Details - The Physics</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+        <div class="atom">
+            ⚛
+        </div>
+
+        <div>
+
+            <h2>THE PHYSICS</h2>
+
+            <p>
+                Learn • Explore • Understand
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Founder -->
+
+    <div class="founder">
+
+        <h3>G. KIRAN KUMAR</h3>
+
+        <p>
+            Founder & Creator
+        </p>
+
+    </div>
+
+
+
+
+    <!-- Student Form -->
+
+
+    <div class="student-box">
+
+
+        <h1>
+            Welcome to The Physics
+        </h1>
+
+
+        <p>
+            Enter your details to start learning
+        </p>
+
+
+
+        <input 
+        type="text"
+        id="studentName"
+        placeholder="Enter Your Name">
+
+
+
+        <select id="classSelect">
+
+
+            <option value="">
+                Select Class
+            </option>
+
+
+            <option value="9th">
+                9th Class
+            </option>
+
+
+            <option value="10th">
+                10th Class
+            </option>
+
+
+        </select>
+
+
+
+        <button onclick="goToClass()">
+            Continue 🚀
+        </button>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+function goToClass(){
+
+
+    let name = document.getElementById("studentName").value;
+
+
+    let className = document.getElementById("classSelect").value;
+
+
+
+    if(name.trim() == ""){
+
+        alert("Please enter your name");
+
+        return;
+
+    }
+
+
+
+    if(className == ""){
+
+        alert("Please select your class");
+
+        return;
+
+    }
+
+
+
+    if(className == "9th"){
+
+
+        window.location.href = "9th.html";
+
+
+    }
+
+
+    else if(className == "10th"){
+
+
+        window.location.href = "10th.html";
+
+
+    }
+
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>

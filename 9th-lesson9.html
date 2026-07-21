@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 9 - What is Inside an Atom</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="lesson-content">
+
+<h1>⚛ Lesson 9 - What is Inside an Atom</h1>
+
+<p class="subtitle">
+9th Class Physical Science
+</p>
+<div class="ai-box">
+
+<h3>🤖 AI Teacher</h3>
+
+<p>
+Need help understanding this topic?
+Click below.
+</p>
+
+<button class="ai-btn"
+onclick="explainLesson()">
+
+🤖 Explain with AI
+
+</button>
+
+<div id="aiExplanation"
+class="ai-answer"
+style="display:none;">
+</div>
+
+</div>
+
+<div class="topic-nav">
+
+<a href="#intro">Introduction</a>
+
+<a href="#atom">Atom</a>
+
+<a href="#particles">Subatomic Particles</a>
+
+<a href="#nucleus">Nucleus</a>
+
+<a href="#electrons">Electrons</a>
+
+<a href="#lab">Virtual Lab</a>
+
+<a href="#summary">Summary</a>
+
+</div>
+
+<div class="lesson-section" id="intro">
+
+<h2>📖 Introduction</h2>
+
+<p>
+
+Atoms are extremely small building blocks of matter.
+Scientists discovered that atoms contain even smaller particles.
+Learning about these particles helps us understand the structure of matter.
+
+</p>
+
+</div>
+
+<div class="lesson-section" id="atom">
+
+<h2>⚛ Structure of an Atom</h2>
+
+<p>
+
+An atom has a central nucleus surrounded by electrons.
+The nucleus contains protons and neutrons.
+
+</p>
+
+</div>
+
+<div class="lesson-section" id="particles">
+
+<h2>🔬 Subatomic Particles</h2>
+
+<ul>
+
+<li>➕ Proton</li>
+
+<li>⚪ Neutron</li>
+
+<li>➖ Electron</li>
+
+</ul>
+
+</div>
+<!-- NUCLEUS -->
+
+<div class="lesson-section" id="nucleus">
+
+<h2>🎯 Nucleus</h2>
+
+<p>
+
+The nucleus is the central part of an atom.
+
+It contains protons and neutrons.
+
+Almost all the mass of an atom is concentrated in the nucleus.
+
+</p>
+
+<div class="fact-box">
+
+<h3>Contains</h3>
+
+<ul>
+
+<li>➕ Protons (Positive charge)</li>
+
+<li>⚪ Neutrons (No charge)</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- ELECTRONS -->
+
+<div class="lesson-section" id="electrons">
+
+<h2>⚡ Electrons</h2>
+
+<p>
+
+Electrons are very small negatively charged particles.
+
+They move around the nucleus in energy levels (shells).
+
+</p>
+
+<div class="fact-box">
+
+<h3>Electron Facts</h3>
+
+<ul>
+
+<li>Negative charge</li>
+
+<li>Very small mass</li>
+
+<li>Move around the nucleus</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- VIRTUAL LAB -->
+
+<div class="lesson-section" id="lab">
+
+<h2>🧪 Virtual Lab - Atom Model</h2>
+
+<p>
+
+Click the button to build an atom.
+
+</p>
+
+<button class="next-btn"
+
+onclick="buildAtom()">
+
+⚛ Build Atom
+
+</button>
+
+<div style="margin-top:20px;height:280px;background:#111;border-radius:12px;position:relative;overflow:hidden;">
+
+<div id="atomCenter"
+
+style="position:absolute;
+left:47%;
+top:43%;
+font-size:55px;
+opacity:0;
+transition:1s;">
+
+🔴
+
+</div>
+
+<div id="electron"
+
+style="position:absolute;
+left:20%;
+top:20%;
+font-size:35px;
+opacity:0;
+transition:2s;">
+
+🔵
+
+</div>
+
+</div>
+
+<p id="atomResult"></p>
+
+</div>
+
+<!-- PRACTICAL ACTIVITY -->
+
+<div class="lesson-section">
+
+<h2>🔬 Activity</h2>
+
+<p>
+
+Build a simple atom model using coloured paper or thermocol balls.
+
+Use different colours for protons, neutrons and electrons.
+
+</p>
+
+</div>
+<!-- IMPROVE YOUR LEARNING -->
+
+<div class="lesson-section" id="improve">
+
+<h2>📚 Improve Your Learning</h2>
+
+<div class="fact-box">
+
+<h3>1. What is an atom?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at1',this)">
+👀 Show Answer
+</button>
+
+<p id="at1" style="display:none;">
+An atom is the basic building block of matter.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>2. What is the nucleus?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at2',this)">
+👀 Show Answer
+</button>
+
+<p id="at2" style="display:none;">
+The nucleus is the central part of an atom containing protons and neutrons.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>3. Which particle has a positive charge?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at3',this)">
+👀 Show Answer
+</button>
+
+<p id="at3" style="display:none;">
+Proton.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>4. Which particle has a negative charge?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at4',this)">
+👀 Show Answer
+</button>
+
+<p id="at4" style="display:none;">
+Electron.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>5. Which particle has no charge?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at5',this)">
+👀 Show Answer
+</button>
+
+<p id="at5" style="display:none;">
+Neutron.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>6. Where are protons found?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at6',this)">
+👀 Show Answer
+</button>
+
+<p id="at6" style="display:none;">
+Inside the nucleus.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>7. Where do electrons move?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at7',this)">
+👀 Show Answer
+</button>
+
+<p id="at7" style="display:none;">
+Around the nucleus in energy levels (shells).
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>8. Which part of an atom contains most of its mass?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at8',this)">
+👀 Show Answer
+</button>
+
+<p id="at8" style="display:none;">
+The nucleus.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>9. Name the three subatomic particles.</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at9',this)">
+👀 Show Answer
+</button>
+
+<p id="at9" style="display:none;">
+Protons, Neutrons and Electrons.
+</p>
+
+</div>
+
+<div class="fact-box">
+
+<h3>10. Why is the atom important?</h3>
+
+<button class="quiz-btn" onclick="toggleAnswer('at10',this)">
+👀 Show Answer
+</button>
+
+<p id="at10" style="display:none;">
+Atoms combine to form all substances around us.
+</p>
+
+</div>
+
+</div>
+
+<!-- SUMMARY -->
+
+<div class="lesson-section" id="summary">
+
+<h2>📖 Lesson Summary</h2>
+
+<ul>
+
+<li>✅ Matter is made up of atoms.</li>
+
+<li>✅ Atoms contain protons, neutrons and electrons.</li>
+
+<li>✅ The nucleus contains protons and neutrons.</li>
+
+<li>✅ Electrons move around the nucleus.</li>
+
+<li>✅ Protons are positive, electrons are negative and neutrons have no charge.</li>
+
+</ul>
+
+</div>
+
+<!-- LESSON COMPLETED -->
+
+<div class="lesson-section">
+
+<h2>🎉 Lesson Completed</h2>
+
+<p>
+
+Congratulations!
+
+You have successfully completed
+
+<b>Lesson 9 – What is Inside an Atom.</b>
+
+</p>
+
+</div>
+
+<div style="text-align:center;margin:40px 0;">
+
+<button class="next-btn"
+
+onclick="location.href='9th-lesson10.html'">
+
+➡ Continue to Lesson 10
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
