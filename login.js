@@ -45,7 +45,7 @@ signInWithEmailAndPassword(auth, email.value, password.value)
 msg.style.color = "green";
 msg.innerHTML = "Login Successful";
 
-window.location.href = "dashboard.html";
+window.location.href = "student.html";
 
 })
 
@@ -62,7 +62,7 @@ const provider = new GoogleAuthProvider();
 document.getElementById("googleLogin").addEventListener("click", async () => {
   try {
     await signInWithPopup(auth, provider);
-    window.location.href = "dashboard.html";
+   window.location.href = "student.html";
   } catch (error) {
     msg.style.color = "red";
     msg.innerHTML = error.message;
