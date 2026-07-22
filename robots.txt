@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://the-physics-two.vercel.app/sitemap.xml
