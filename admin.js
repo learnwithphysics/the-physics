@@ -1,10 +1,25 @@
-import { database } from "./firebase.js";
+import { auth, database } from "./firebase.js";
+
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
 
 import {
 ref,
 onValue
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
+onAuthStateChanged(auth, (user) => {
 
+    if (!user) {
+        window.location.href = "login.html";
+        return;
+    }
+
+    if (user.email !== "vishallucky58@gmail.com") {
+        alert("Access Denied!");
+        window.location.href = "student.html";
+        return;
+    }
+
+});
 const totalStudents = document.getElementById("totalStudents");
 const studentTable = document.getElementById("studentTable");
 
