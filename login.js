@@ -1,7 +1,4 @@
-import { ref, update } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
 import { auth, database } from "./firebase.js";
-import { auth } from "./firebase.js";
-import { database } from "./firebase.js";
 
 import {
 createUserWithEmailAndPassword,
@@ -10,7 +7,8 @@ GoogleAuthProvider,
 signInWithPopup
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
 
-import { ref, set } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
+import { ref, set, update } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
+
 
 const email = document.getElementById("email");
 const password = document.getElementById("password");
@@ -42,12 +40,31 @@ document.getElementById("login").addEventListener("click", () => {
 
 signInWithEmailAndPassword(auth, email.value, password.value)
 
-.then(() => {
+.then(async (credential) => {
+
+const user = credential.user;
+
+await update(ref(database, "students/" + user.uid), {
+
+loginTime: new Date().toLocaleString(),
+
+online: true
+
+});
 
 msg.style.color = "green";
+
 msg.innerHTML = "Login Successful";
 
+if(user.email === "vishallucky58@gmail.com"){
+
+window.location.href = "admin.html";
+
+}else{
+
 window.location.href = "student.html";
+
+}
 
 })
 
@@ -71,13 +88,23 @@ document.getElementById("googleLogin").addEventListener("click", async () => {
 
         await set(ref(database, "students/" + user.uid), {
 
-            name: user.displayName,
-            email: user.email,
-            uid: user.uid,
-            photo: user.photoURL,
-            loginTime: new Date().toLocaleString()
+    name: user.displayName || "Student",
 
-        });
+    email: user.email,
+
+    uid: user.uid,
+
+    photo: user.photoURL,
+
+    loginTime: new Date().toLocaleString(),
+
+    online: true,
+
+    progress: 0,
+
+    completedLessons: 0
+
+});
 
         if (user.email === "vishallucky58@gmail.com") {
 

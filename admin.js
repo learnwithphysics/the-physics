@@ -39,17 +39,24 @@ onValue(studentsRef, (snapshot) => {
 
     }
 
-    const students = snapshot.val();
-    let total = 0;
+   const students = snapshot.val();
 
-if (students) {
-    total = Object.keys(students).length;
-}
+let total = 0;
+let online = 0;
+
+Object.values(students).forEach(student => {
+
+    total++;
+
+    if(student.online){
+        online++;
+    }
+
+});
 
 totalStudents.innerHTML = total;
-onlineStudents.innerHTML = total;
+onlineStudents.innerHTML = online;
 todayLogins.innerHTML = total;
-
    
 
     Object.values(students).forEach(student => {
@@ -63,11 +70,31 @@ todayLogins.innerHTML = total;
             <td>${student.email || "-"}</td>
 
             <td>${student.progress || 0}%</td>
+            <td>${student.completedLessons || 0}</td>
+
+<td>${student.online ? "🟢 Online" : "⚪ Offline"}</td>
 
         </tr>
 
         `;
 
     });
+
+});
+const searchInput = document.getElementById("searchStudent");
+
+searchInput.addEventListener("keyup", () => {
+
+const value = searchInput.value.toLowerCase();
+
+const rows = studentTable.getElementsByTagName("tr");
+
+for(let row of rows){
+
+const text = row.innerText.toLowerCase();
+
+row.style.display = text.includes(value) ? "" : "none";
+
+}
 
 });
