@@ -1,3 +1,5 @@
+import { ref, update } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-database.js";
+import { auth, database } from "./firebase.js";
 import { auth } from "./firebase.js";
 import { database } from "./firebase.js";
 

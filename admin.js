@@ -21,6 +21,8 @@ onAuthStateChanged(auth, (user) => {
 
 });
 const totalStudents = document.getElementById("totalStudents");
+const onlineStudents = document.getElementById("onlineStudents");
+const todayLogins = document.getElementById("todayLogins");
 const studentTable = document.getElementById("studentTable");
 
 const studentsRef = ref(database, "students");
@@ -38,8 +40,17 @@ onValue(studentsRef, (snapshot) => {
     }
 
     const students = snapshot.val();
+    let total = 0;
 
-    totalStudents.innerHTML = Object.keys(students).length;
+if (students) {
+    total = Object.keys(students).length;
+}
+
+totalStudents.innerHTML = total;
+onlineStudents.innerHTML = total;
+todayLogins.innerHTML = total;
+
+   
 
     Object.values(students).forEach(student => {
 
@@ -51,7 +62,7 @@ onValue(studentsRef, (snapshot) => {
 
             <td>${student.email || "-"}</td>
 
-            <td>${student.loginTime || "-"}</td>
+            <td>${student.progress || 0}%</td>
 
         </tr>
 
