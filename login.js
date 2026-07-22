@@ -77,7 +77,15 @@ document.getElementById("googleLogin").addEventListener("click", async () => {
 
         });
 
-        window.location.href = "student.html";
+        if (user.email === "vishallucky58@gmail.com") {
+
+    window.location.href = "admin.html";
+
+} else {
+
+    window.location.href = "student.html";
+
+}
 
     } catch (error) {
 
